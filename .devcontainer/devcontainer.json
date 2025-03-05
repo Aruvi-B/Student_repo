@@ -1,0 +1,12 @@
+{
+  "name": "Trainer DevContainer",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "extensions": [
+    "ms-vscode.cpptools"  // C++ Extension
+  ],
+  "postCreateCommand": "bash /workspaces/setup.sh",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:1": {},
+    "ghcr.io/devcontainers/features/git:1": {}
+  }
+}
